@@ -3,7 +3,7 @@
 //site specific configuration declartion
 define('BASE_PATH', 'http://localhost/angularjs-insert-update-delete/');
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'codexworld');
+define('DB_NAME', 'angular-js-apps');
 define('DB_USERNAME','root');
 define('DB_PASSWORD','root');
 
