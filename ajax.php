@@ -38,7 +38,6 @@ function save_user($mysqli){
 			throw new Exception( "Required fields missing, Please enter and submit" );
 		}
 	
-	
 		if(empty($id)){
 			$query = "INSERT INTO employee (`id`, `name`, email, `companyName`, `designation`) VALUES (NULL, '$name', '$email', '$companyName', '$designation')";
 		}else{
@@ -83,8 +82,6 @@ function delete_user($mysqli, $id = ''){
 		}else{
 			throw new Exception( $mysqli->sqlstate.' - '. $mysqli->error );
 		}
-		
-	
 	}catch (Exception $e){
 		$data = array();
 		$data['success'] = false;
@@ -99,7 +96,6 @@ function delete_user($mysqli, $id = ''){
  */
 function getUsers($mysqli){
 	try{
-	
 		$query = "SELECT * FROM `employee` order by id desc limit 8";
 		$result = $mysqli->query( $query );
 		$data = array();
@@ -109,7 +105,6 @@ function getUsers($mysqli){
 		}
 		$data['success'] = true;
 		echo json_encode($data);exit;
-	
 	}catch (Exception $e){
 		$data = array();
 		$data['success'] = false;

@@ -100,6 +100,8 @@
 				</div>
 			</div>
 		</div>
+
+		<h2 class="title text-center"> AngularJS Insert Update Delete Using PHP MySQL</h2>
 	</div>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
